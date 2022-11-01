@@ -60,6 +60,7 @@ w.draw_rec(screen, end, pygame.Color(0, 255, 0))
 
 print(wall_pos)
 for n in agent.neighbor():
+    print('n',n)
     if n not in visited and n not in neighbors and n not in wall_pos:
         neighbors.append(n)
 
@@ -107,4 +108,4 @@ while(1):
 
         pygame.time.delay(200)
     
-pygame.time.delay(5000)                                 #Delay after completion
+pygame.time.delay(1000)                                 #Delay after completion
